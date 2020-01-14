@@ -5,6 +5,7 @@ def nyc_pigeon_organizer(data)
     puts value
       value.each_with_index{|name, i| 
       result[name] = {} unless result[name]
+      result[name][k] = Array.new() unless result[name][k]
       result[name][k] << internal_key.to_s
   }
   }
