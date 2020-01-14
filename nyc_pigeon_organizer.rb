@@ -5,6 +5,7 @@ def nyc_pigeon_organizer(data)
     v.each{|internal_key, value| 
       value.each_with_index{|name, i| 
       result[name][k] << internal_key.to_s
+      p internal_key
   }
   }
   }
