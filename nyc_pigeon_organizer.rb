@@ -1,9 +1,13 @@
 def nyc_pigeon_organizer(data)
+  p data
   result = {}
   data.each{|k,v|
     v.each{|internal_key, value| 
-      result[value.to_sym][k] << internal_key.to_s
+      value.each{
   }
  }
     return result
 end
+
+
+      result[value.to_sym][k] << internal_key.to_s
