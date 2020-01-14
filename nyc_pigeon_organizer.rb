@@ -3,4 +3,5 @@ def nyc_pigeon_organizer(data)
  data.each{|k,v|
   v.each{|internal_key, value| 
     result[value][k] = internal_key.to_s}}
+    return result
 end
