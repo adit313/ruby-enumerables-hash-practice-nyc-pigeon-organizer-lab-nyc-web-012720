@@ -4,6 +4,7 @@ def nyc_pigeon_organizer(data)
     v.map{|internal_key, value| 
     puts value
       value.each_with_index{|name, i| 
+      result[name] = {} unless result[name]
       result[name][k] << internal_key.to_s
   }
   }
