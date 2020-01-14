@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   data.each{|k,v|
     v.each{|internal_key, value| 
       value.each{|i, name| 
-      result[name][k] << value.to_s
+      result[name][k] << internal_key.to_s
   }
   }
   }
