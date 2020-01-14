@@ -3,9 +3,12 @@ def nyc_pigeon_organizer(data)
   result = {}
   data.each{|k,v|
     v.each{|internal_key, value| 
-      value.each{
+      value.each{|i, name| 
+      result[name][k] << value.to_s
   }
- }
+  }
+  }
+  
     return result
 end
 
