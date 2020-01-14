@@ -13,4 +13,3 @@ def nyc_pigeon_organizer(data)
 end
 
 
-      result[value.to_sym][k] << internal_key.to_s
